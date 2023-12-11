@@ -16,6 +16,7 @@ function App() {
   useEffect( ()=>{
     const newIndex = Math.floor(Math.random() * PHRASES.length);
     setPhrase(PHRASES[newIndex].q);
+    userText.current.focus()
   }, [changePhrase] )
 
   function handleUserInput(){
@@ -53,7 +54,7 @@ function App() {
             max={phrase.length} 
             value={textlenght}
           />
-          <img src={carIcon} alt="" className='absolute bottom-6 w-20' style={{ 
+          <img key={Math.random()} src={carIcon} alt="" className='absolute bottom-6 w-20' style={{ 
             left: ( ((Math.floor(100 / phrase.length))) * textlenght + "%")
            }} />
         </div>
@@ -63,8 +64,7 @@ function App() {
           onInput={handleUserInput} 
           type="text" 
           placeholder="In attesa dell'utente..." 
-          className={isValid ? "w-1/3 p-2 border border-black rounded-md shadow-md focus:border-none focus:outline-green-500" : "w-1/3 p-2 border border-black rounded-md shadow-md focus:border-none focus:outline-red-500"} 
-          autoFocus 
+          className={isValid ? "w-1/3 p-2 border border-black rounded-md shadow-md focus:border-none focus:outline-green-500" : "w-1/3 p-2 border border-black rounded-md shadow-md focus:border-none focus:outline-red-500"}
           disabled={finish}
         />
 

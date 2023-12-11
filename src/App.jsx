@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from 'react';
 import './App.css';
 import {PHRASES} from '../src/phrases.js';
 import carIcon from './assets/car.png';
-import { SpeedInsights } from "@vercel/speed-insights/next";
+import { SpeedInsights } from '@vercel/speed-insights/react';
 
 function App() {
 
@@ -46,8 +46,8 @@ function App() {
 
   return (
     <>
-      <SpeedInsights />
       <div className='container mx-auto flex flex-col items-center py-20'>
+        <SpeedInsights />
 
         <p className={finish ? 'w-1/3 mx auto text-2xl italic text-center text-slate-50 animate-bounce' : 'w-1/3 mx auto py-10 text-slate-50 text-2xl'}>{finish ? "'" + phrase + "'" : phrase}</p>
 

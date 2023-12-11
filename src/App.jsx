@@ -78,7 +78,7 @@ function App() {
           <div className='w-1/3 px-3 py-7 border-slate-50/50 backdrop-blur-xl border bg-gradient-to-r from-purple-600/50 to-purple-900/50 rounded-md shadow-md mt-10'>
             <div className=' w-full mx-auto mt-10 flex justify-around'>
               <p className='italic text-slate-200'>Autore: {obj.a}</p>
-              <p className='text-slate-200'>Anno: 19{obj.c}</p>
+              <p className='text-slate-200'>Caratteri: {obj.c}</p>
             </div>
             <div className='w-2/3 mx-auto text-center mt-10'>
               <img src={obj.i} alt=""  className='w-full rounded-md'/>

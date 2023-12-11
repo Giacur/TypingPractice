@@ -12,5 +12,18 @@ progress::-webkit-progress-bar {
     background-color: lightgrey;
  }
  progress::-webkit-progress-value {
-    background-color: rgba(0, 0, 255, 0.542);
+    background-color:   blue;
+ }
+
+ #root {
+    background-image: url('./assets/bg.jpeg');
+    background-size: cover;
+    min-height: 100vh;
+ }
+
+ #road {
+    background-image: url('./assets/road.png');
+    background-position: center;
+    background-size: cover;
+    height: 20vh;
  }

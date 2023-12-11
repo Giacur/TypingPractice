@@ -66,7 +66,7 @@ function App() {
           onInput={handleUserInput} 
           type="text" 
           placeholder="In attesa dell'utente..." 
-          className={isValid ? "w-1/3 p-2 border border-black rounded-md shadow-md focus:border-none focus:outline-green-500" : "w-1/3 p-2 border border-black rounded-md shadow-md focus:border-none focus:outline-red-500"}
+          className={isValid ? "w-1/3 p-2 border border-black rounded-md shadow-md focus:border-none focus:outline-8 focus:outline-green-400 mt-5" : "w-1/3 p-2 border border-black rounded-md shadow-md focus:border-none mt-5 focus:outline-8 focus:outline-red-600 animate-bounce"}
           disabled={finish}
         />
         </>}
